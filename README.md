@@ -1,4 +1,4 @@
-# District Heating Economic Analysis
+﻿# District Heating Economic Analysis
 
 > Analyse économique et énergétique de 15 réseaux de chaleur urbains (RCU) : rentabilité, efficacité, impact des ENR, score composite et projection des recettes.  
 > **Stack :** Python · pandas · scikit-learn · matplotlib · seaborn
@@ -429,6 +429,13 @@ Les énergies renouvelables (géothermie, biomasse, solaire) ont un coût d'expl
 | Building Energy Analytics | [building-energy-efficiency-analytics](https://github.com/TSAGUE25/building-energy-efficiency-analytics) |
 | Customer Segmentation | [customer-marketing-segmentation](https://github.com/TSAGUE25/customer-marketing-segmentation) |
 | Bank Churn Prediction | [bank-customer-churn-prediction](https://github.com/TSAGUE25/bank-customer-churn-prediction) |
+
+
+## Contributors
+
+| Nom | Role | GitHub |
+|-----|------|--------|
+| **TSAGUE Emmanuel** | Data Scientist - auteur principal | [@TSAGUE25](https://github.com/TSAGUE25) |
 
 ---
 
