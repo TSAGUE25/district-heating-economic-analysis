@@ -1,0 +1,16 @@
+id_reseau,nom_reseau,ville,region,annee_creation,longueur_reseau_km,nb_abonnes,puissance_installee_mw,type_energie_principale,energie_renouvelable_pct,temperature_depart_c,temperature_retour_c,rendement_reseau_pct
+RCU001,Reseau Nord,Paris,Ile-de-France,1985,42.5,3200,185,Biomasse,72,90,55,87.2
+RCU002,Reseau Est,Paris,Ile-de-France,1992,28.3,2100,124,Geothermie,95,75,45,91.4
+RCU003,Reseau Centre,Lyon,Auvergne-Rhone-Alpes,1978,35.7,2800,160,Cogénération gaz,45,95,60,84.6
+RCU004,Reseau Sud,Lyon,Auvergne-Rhone-Alpes,2005,18.2,1400,82,Biomasse,88,85,50,89.3
+RCU005,Reseau Ouest,Grenoble,Auvergne-Rhone-Alpes,1971,56.1,4100,210,Geothermie,98,72,42,92.8
+RCU006,Reseau Université,Grenoble,Auvergne-Rhone-Alpes,2010,12.4,890,48,Solaire thermique,100,65,38,88.7
+RCU007,Reseau Industriel,Strasbourg,Grand Est,1988,31.9,1950,145,Cogénération biomasse,68,88,52,86.1
+RCU008,Reseau Ancien,Bordeaux,Nouvelle-Aquitaine,1965,22.6,1600,95,Gaz naturel,5,100,65,81.3
+RCU009,Reseau Moderne,Bordeaux,Nouvelle-Aquitaine,2015,9.8,720,42,Pompe chaleur,85,55,35,93.5
+RCU010,Reseau Quartier,Rennes,Bretagne,2018,7.2,540,31,Biomasse,92,80,48,90.2
+RCU011,Reseau Port,Nantes,Pays de la Loire,2000,19.4,1380,88,Cogénération gaz,38,92,58,83.7
+RCU012,Reseau Campus,Toulouse,Occitanie,2012,14.6,1050,62,Geothermie,90,70,40,91.0
+RCU013,Reseau ZAC,Lille,Hauts-de-France,2008,16.8,1220,74,Biomasse,78,84,51,88.4
+RCU014,Reseau Historique,Metz,Grand Est,1975,29.3,2050,130,Gaz naturel,8,98,63,82.1
+RCU015,Reseau ENR,Montpellier,Occitanie,2020,5.4,380,22,Solaire thermique,100,58,35,94.1
