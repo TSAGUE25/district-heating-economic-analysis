@@ -1,14 +1,13 @@
 # CAS D'USAGE 3 — Analyse Économique d'un Réseau de Chaleur Urbain
 ## Prioriser les raccordements rentables pour maximiser la valeur économique
 
-> **Auteur :** Emmanuel TSAGUE — Data Scientist / Data Analyst  
+> **Auteur :** TSAGUE EMMANUEL — Data Scientist / Data Analyst  
 > **Domaine :** Énergie, Analyse économique, Aide à la décision  
 > **Repository GitHub :** `district-heating-economic-analysis`  
 > **Statut :** Portfolio — données simulées  
 > **Date :** Juin 2026
 
 ---
-
 ## 1. TITRE ET RÉSUMÉ EXÉCUTIF
 
 **"Analyse économique d'un réseau de chaleur urbain pour prioriser les raccordements rentables et maximiser la valeur du réseau"**
@@ -22,7 +21,6 @@ Un exploitant de réseau de chaleur doit décider quels bâtiments raccorder en 
 **Résultats hypothétiques :** 23 raccordements rentables sur 50 candidats, VAN cumulée de 4,2 M€ sur 20 ans, payback moyen de 7,3 ans.
 
 ---
-
 ## 2. CONTEXTE MÉTIER
 
 ### Le réseau de chaleur en France
@@ -39,7 +37,6 @@ Un exploitant doit développer son réseau de façon rentable :
 - La distance au réseau existant, la consommation potentielle et la concurrence (fioul, gaz) déterminent la rentabilité
 
 ---
-
 ## 3. POURQUOI CE SUJET EXISTE
 
 | Raison | Explication |
@@ -51,7 +48,6 @@ Un exploitant doit développer son réseau de façon rentable :
 | **Rentabilité du réseau** | Plus le réseau est dense, plus les coûts fixes sont amortis |
 
 ---
-
 ## 4. PROBLÈME MÉTIER
 
 > "Nous avons 50 bâtiments candidats au raccordement. Nous n'avons le budget que pour en raccorder 15 cette année. Lesquels choisir pour maximiser la valeur économique ?"
@@ -64,7 +60,6 @@ Un exploitant doit développer son réseau de façon rentable :
 5. Communiquer les résultats aux décideurs non-financiers
 
 ---
-
 ## 5. OBJECTIFS DU PROJET
 
 | Objectif | Livrable |
@@ -76,7 +71,6 @@ Un exploitant doit développer son réseau de façon rentable :
 | Dashboard décisionnel | Power BI ou Python pour les décideurs |
 
 ---
-
 ## 6. DONNÉES UTILISÉES
 
 > **Données simulées à titre pédagogique.**
@@ -99,7 +93,6 @@ Un exploitant doit développer son réseau de façon rentable :
 | `statut_negociation` | Catégorie | Prospect, en cours, signé | Avancement |
 
 ---
-
 ## 7. PRÉPARATION DES DONNÉES
 
 ```python
@@ -140,7 +133,6 @@ df.to_csv("data_sample/batiments_candidats.csv", index=False)
 ```
 
 ---
-
 ## 8. MÉTHODES ET MODÈLES
 
 ### A. Calcul de la rentabilité — VAN, TRI, Payback
@@ -325,7 +317,6 @@ plt.savefig("figures/analyse_rentabilite.png", dpi=150, bbox_inches="tight")
 ```
 
 ---
-
 ## 9. DÉMARCHE ÉTAPE PAR ÉTAPE
 
 ```
@@ -340,7 +331,6 @@ plt.savefig("figures/analyse_rentabilite.png", dpi=150, bbox_inches="tight")
 ```
 
 ---
-
 ## 10. MÉTRIQUES
 
 | Métrique | Formule | Seuil rentabilité | Interprétation |
@@ -355,7 +345,6 @@ plt.savefig("figures/analyse_rentabilite.png", dpi=150, bbox_inches="tight")
 > **Densité thermique linéaire :** indicateur clé en développement de réseau. Une densité > 1,5 MWh/m de réseau signifie que la chaleur vendue par mètre de tranchée est suffisante pour rentabiliser le réseau.
 
 ---
-
 ## 11. RÉSULTATS SIMULÉS
 
 | Indicateur | Valeur |
@@ -379,7 +368,6 @@ plt.savefig("figures/analyse_rentabilite.png", dpi=150, bbox_inches="tight")
 | 5 | BAT-019 | 750 | 38 000 | 165 000 | 5,8 ans |
 
 ---
-
 ## 12. VALEUR MÉTIER
 
 | Valeur | Description |
@@ -391,7 +379,6 @@ plt.savefig("figures/analyse_rentabilite.png", dpi=150, bbox_inches="tight")
 | **Stratégie** | Les scénarios permettent de choisir une stratégie de développement cohérente |
 
 ---
-
 ## 13. LIMITES
 
 | Limite | Description |
@@ -404,7 +391,6 @@ plt.savefig("figures/analyse_rentabilite.png", dpi=150, bbox_inches="tight")
 | Graphes de réseau | Le modèle greedy ne capture pas la topologie du réseau |
 
 ---
-
 ## 14. AMÉLIORATIONS
 
 - **Théorie des graphes (NetworkX)** : modéliser le réseau et optimiser les tracés
@@ -418,7 +404,6 @@ plt.savefig("figures/analyse_rentabilite.png", dpi=150, bbox_inches="tight")
 > **Monte Carlo :** méthode qui simule des milliers de scénarios avec des paramètres tirés aléatoirement (dans leur plage d'incertitude) pour évaluer la robustesse d'une décision.
 
 ---
-
 ## 15. ARCHITECTURE GITHUB
 
 ```
@@ -448,88 +433,6 @@ district-heating-economic-analysis/
 ```
 
 ---
-
-## 16. README GITHUB
-
-```markdown
-# District Heating Economic Analysis
-## Analyse économique de raccordements à un réseau de chaleur urbain
-
-> **Auteur :** Emmanuel TSAGUE | **Données :** simulées
-
-## Objectif
-Calculer la rentabilité (VAN, TRI, Payback) de chaque bâtiment candidat,
-optimiser le portefeuille sous contrainte budgétaire et comparer des scénarios.
-
-## Méthodes
-- VAN / TRI / Payback par bâtiment
-- Optimisation greedy sous contrainte budget
-- Analyse de 4 scénarios de développement
-- Cartographie des candidats
-
-## Résultats (simulés)
-- 23/50 bâtiments rentables | VAN portefeuille : 4,2 M€ | Payback moyen : 7,3 ans
-
-## Avertissement
-Données et résultats entièrement simulés — aucune organisation réelle.
-```
-
----
-
-## 17. VERSION CV
-
-> Analyse économique de raccordements à un réseau de chaleur urbain : calcul VAN/TRI/Payback par bâtiment candidat, optimisation de portefeuille sous contrainte budgétaire (algorithme greedy), comparaison de 4 scénarios de développement, cartographie Python et dashboard décisionnel — Python, pandas, numpy, matplotlib.
-
----
-
-## 18. VERSION ENTRETIEN
-
-"J'ai travaillé sur un cas d'analyse économique pour un réseau de chaleur urbain. Le problème : un exploitant avait 50 bâtiments candidats au raccordement mais seulement le budget pour en connecter 15. Il fallait décider lesquels maximisaient la valeur économique. J'ai construit un modèle en trois temps : calcul individuel de la VAN, du TRI et du payback pour chaque bâtiment ; optimisation du portefeuille sous contrainte budgétaire par un algorithme greedy qui maximise le ratio VAN sur coût d'investissement ; et comparaison de quatre scénarios stratégiques. Les résultats simulés montrent que 46 % des candidats sont rentables, avec une VAN cumulée de 4,2 M€ sur 20 ans pour le portefeuille optimal. La limite principale : le modèle ne capture pas les synergies entre raccordements — raccorder un bâtiment peut rendre le suivant rentable. L'amélioration naturelle serait d'intégrer la théorie des graphes avec NetworkX."
-
----
-
-## 19. VERSION PORTFOLIO
-
-Ce projet démontre la capacité à combiner finance, énergie et Data Science pour répondre à une question stratégique concrète. Il est directement transférable à des contextes de gestion de portefeuille d'investissements : quels projets financer en priorité avec un budget limité ? La méthodologie VAN/TRI/Payback s'applique à tout projet d'infrastructure énergétique : extension de réseau d'eau, déploiement de bornes de recharge, installation de panneaux solaires en toiture.
-
-**Transférabilité EDF/Enedis :** analyse de rentabilité des projets de raccordement réseau électrique, priorisation des investissements de modernisation du réseau, analyse coût/bénéfice des effacements de consommation.
-
----
-
-## 20. POST LINKEDIN
-
-**Data Science + énergie + finance : trois domaines qui font sens ensemble.**
-
-Comment décider quels bâtiments raccorder en priorité à un réseau de chaleur quand le budget est limité ?
-
-J'ai construit un modèle d'analyse économique qui calcule automatiquement, pour chaque bâtiment candidat : la Valeur Actuelle Nette sur 20 ans, le Taux de Rendement Interne, et le délai de récupération de l'investissement.
-
-Puis un algorithme d'optimisation qui sélectionne le portefeuille de raccordements qui maximise la VAN totale sous contrainte budgétaire.
-
-Résultat simulé : sur 50 candidats, 23 sont rentables. Le portefeuille optimal de 15 raccordements génère 4,2 M€ de VAN cumulée pour 1,5 M€ investi.
-
-Ce type de modèle permet de passer de l'intuition à la décision objectivée — ce qui est l'essence même du travail Data Analyst en environnement énergie.
-
-`#Énergie` `#ReseauDeChaleur` `#DataScience` `#AnalyseEconomique` `#Python` `#Investissement`
-
----
-
-## 21. QUESTIONS D'ENTRETIEN
-
-**Q : Qu'est-ce que la VAN et comment l'interpréter ?**
-> La VAN est la somme des flux financiers futurs actualisés, diminuée de l'investissement initial. VAN > 0 : le projet crée de la valeur — il faut l'accepter. VAN < 0 : le projet détruit de la valeur. L'actualisation tient compte du fait qu'un euro futur vaut moins qu'un euro aujourd'hui.
-
-**Q : Quelle différence entre TRI et VAN ? Lequel utiliser ?**
-> La VAN mesure la valeur créée en euros. Le TRI mesure le rendement en pourcentage. Pour comparer des projets de taille différente, la VAN est plus fiable. Pour communiquer avec des financiers, le TRI est plus intuitif. En pratique, on utilise les deux.
-
-**Q : Qu'est-ce qu'un algorithme greedy ?**
-> Un algorithme greedy (glouton) prend à chaque étape la meilleure décision locale sans revenir en arrière. Ici : trier les bâtiments par ratio VAN/coût décroissant, et les ajouter au portefeuille tant que le budget le permet. C'est simple et rapide, mais pas toujours optimal (il peut manquer des combinaisons meilleures). La programmation linéaire donne la solution exacte.
-
-**Q : Comment modéliser les synergies entre raccordements ?**
-> Avec la théorie des graphes : chaque bâtiment est un nœud, le réseau existant est le graphe initial. Raccorder un bâtiment ajoute un nœud et peut réduire la distance d'autres bâtiments. NetworkX permet de calculer les plus courts chemins et d'évaluer l'impact de chaque raccordement sur le réseau global.
-
----
-
 ## 22-23. COMPÉTENCES DÉMONTRÉES
 
 | Compétence | Preuve | Valeur | Phrase CV |
@@ -543,13 +446,22 @@ Ce type de modèle permet de passer de l'intuition à la décision objectivée �
 
 ---
 
-## 24. CONSEILS GITHUB
+*Fin du document — TSAGUE EMMANUEL — CAS 3 — Analyse Économique Réseau de Chaleur*
+---
 
-- Inclure une figure du schéma de réseau simulé — visuellement très impactant pour les recruteurs énergie
-- Documenter les hypothèses financières dans `docs/methodologie_van_tri.md`
-- Ajouter un notebook de sensibilité : "que se passe-t-il si le taux d'actualisation passe de 5 % à 8 % ?"
-- Montrer clairement la distinction entre modèle greedy et optimal
+## Contact & Liens
+
+**TSAGUE EMMANUEL** - Data Scientist
+
+| | |
+|---|---|
+| Email | [emmatsague@yahoo.fr](mailto:emmatsague@yahoo.fr) |
+| GitHub | [github.com/TSAGUE25](https://github.com/TSAGUE25) |
+| Formation | Datascientest 2024 |
+| Experience | EDF MAD EDVANCE |
+| Domaines | Machine Learning - Data Analysis - Energie |
 
 ---
 
-*Fin du document — Emmanuel TSAGUE — CAS 3 — Analyse Économique Réseau de Chaleur*
+> Toutes les donnees de ce depot sont simulees et anonymisees.  
+> Aucune donnee reelle ou confidentielle n'est presente.

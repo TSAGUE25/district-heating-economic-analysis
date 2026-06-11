@@ -116,8 +116,9 @@ Simulation Monte Carlo. Optimisation par programmation linéaire. Carte géograp
 
 ## Contributors
 
-**TSAGUE Emmanuel** — Data Scientist / Data Analyst
-Domaine : Énergie · Analyse économique · Aide à la décision
-GitHub : [TSAGUE25](https://github.com/TSAGUE25)
+**TSAGUE EMMANUEL** - Data Scientist  
+Specialise en Machine Learning, Data Analysis et systemes decisionnels.  
+Formation Datascientest 2024 | EDF MAD EDVANCE  
+Email : [emmatsague@yahoo.fr](mailto:emmatsague@yahoo.fr)  
+GitHub : [github.com/TSAGUE25](https://github.com/TSAGUE25)
 
-> Voir [PORTFOLIO.md](PORTFOLIO.md) pour la documentation complète du cas d'usage (24 sections).
