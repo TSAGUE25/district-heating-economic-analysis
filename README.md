@@ -1,4 +1,4 @@
-# Analyse Économique d'un Réseau de Chaleur Urbain
+﻿# Analyse Économique d'un Réseau de Chaleur Urbain
 
 > **Prioriser les raccordements rentables pour maximiser la valeur économique**
 
@@ -114,9 +114,9 @@ Simulation Monte Carlo. Optimisation par programmation linéaire. Carte géograp
 
 ---
 
-## Auteur
+## Contributors
 
-**Emmanuel TSAGUE** — Data Scientist / Data Analyst
+**TSAGUE Emmanuel** — Data Scientist / Data Analyst
 Domaine : Énergie · Analyse économique · Aide à la décision
 GitHub : [TSAGUE25](https://github.com/TSAGUE25)
 
