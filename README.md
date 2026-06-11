@@ -273,6 +273,17 @@ print(analyzer.projection_recettes(annees_futures=3))
 
 ---
 
+## Ce projet démontre
+
+- La capacité à mener une **analyse économique et financière** sur un parc d'actifs énergétiques : marge opérationnelle, coût unitaire, analyse prix/coût
+- La **quantification de l'impact des ENR** par corrélation de Pearson (r = −0.81) — argument chiffré pour des décisions d'investissement
+- La construction d'un **score composite multicritère** (StandardScaler + pondération 4 dimensions) : outil de classement objectif et actionnable
+- La **projection des recettes à 3 ans** par régression linéaire sklearn — directement utilisable pour un plan pluriannuel d'investissement (PPI)
+- Un pipeline **adaptable au secteur énergie** (EDF, Dalkia, Engie, collectivités) : changer les CSV suffit pour analyser tout portefeuille de réseaux
+- La **maîtrise du vocabulaire domaine** : ENR, DJU, rendement réseau, pertes thermiques, tarif chaleur — crédibilité vis-à-vis des experts métier
+
+---
+
 ## 13. Contributors
 
 | Nom | Rôle | GitHub |
@@ -283,5 +294,5 @@ print(analyzer.projection_recettes(annees_futures=3))
 
 *Auteur : Emmanuel TSAGUE — Data Scientist / Data Analyst*
 *Formation : DataScientest | Domaines : Énergie · Finance · Performance opérationnelle*
-*Contact : emmatsague@yahoo.fr*
+*Contact : emmatsague@yahoo.fr | [LinkedIn](https://www.linkedin.com/in/emmanuel-tsague-114295414)*
 *Données : entièrement simulées — aucune donnée réelle ou confidentielle*
